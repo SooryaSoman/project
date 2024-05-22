@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe Sharing Platform</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+
+  </head>
+<body>
+    <h1>    Recipe Sharing Platform
+    </h1>
+    <a href="login.html">Login</a>
+    <ul>
+        {% for recipe in recipes %}
+        <li><a href="{{ url_for('view_recipe', id=recipe.id) }}">{{ recipe.title }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="addreceipe.html">Add Recipe</a>
+</body>
+</html>
