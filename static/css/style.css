@@ -1,18 +1,15 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+
 
 .container {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 20px;
 }
 
 h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
+    margin-top: 20px;
 }
 
 ul {
@@ -40,11 +37,13 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f5f5f5;
+   background-image: url("/static/images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 form {
-    background-color: #fff;
+    background-color: #12acdf;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -78,4 +77,33 @@ button:hover {
     background-color: #0056b3;
 }
 
+  .navbar {
+    background-color: #0a7b0a;
+    overflow: hidden;
+    height: 100px;
+    margin-top: 10px;
+  }
   
+  .navbar-brand {
+    float: left;
+    display: inline-block;
+    padding: 14px 20px;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-brand img {
+    height: 150x; /* Adjust height as needed */
+  }
+  
+  .navbar-links {
+    float: right;
+  }
+  
+  .navbar-links a {
+    display: inline-block;
+    padding: 14px 20px;
+    color: white;
+    text-decoration: none;
+  }
